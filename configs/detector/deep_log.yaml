@@ -1,0 +1,16 @@
+kind: deep_log
+sequence_length: 10
+embedding_dim: 32
+hidden_size: 64
+num_layers: 1
+top_k: 9
+epochs: 5
+update_epochs: 5
+batch_size: 512
+learning_rate: 0.001
+max_training_sequences: 300000
+replay_events: 20000
+score_quantile: 0.95
+random_seed: 101
+device: cpu
+torch_num_threads: 1

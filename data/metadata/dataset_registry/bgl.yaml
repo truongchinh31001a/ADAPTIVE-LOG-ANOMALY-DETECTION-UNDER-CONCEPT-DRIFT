@@ -1,0 +1,31 @@
+dataset_id: bgl
+canonical_name: Blue Gene/L Log Dataset
+source_url: https://zenodo.org/records/8196385/files/BGL.zip?download=1
+source_record: https://zenodo.org/records/8196385
+citation: >-
+  Adam J. Oliner and Jon Stearley. What Supercomputers Say: A Study of Five
+  System Logs. DSN 2007; Jieming Zhu et al. Loghub: A Large Collection of
+  System Log Datasets for AI-driven Log Analytics. ISSRE 2023.
+acquired_at: 2026-09-24
+license_or_terms: >-
+  Freely available for research or academic work. Retain the Loghub license
+  notice, reference the Loghub repository URL, and cite the Loghub paper.
+archive:
+  path: data/bronze/bgl/BGL.zip
+  size_bytes: 57489019
+  md5: 4452953c470f2d95fcb32d5f6e733f7a
+  sha256: d67fd82a711aea0157a9b83175892c6ee60e384a2ddf5bc51f39118453816da8
+raw_files:
+  - path: data/bronze/bgl/BGL.log
+    size_bytes: 743185031
+    line_count: 4747963
+    sha256: 666130b15ef44eb32fd02bd053e6c6e007c37696b5e7e8b9d8e45b729876a5d2
+processed_files:
+  - path: data/silver/events/bgl_events.parquet
+    sha256: 03c06bbc4b2a50c152bc4c331d361351938168c9256a3d8f10815a424ccdBD9f
+  - path: data/silver/events/templates.parquet
+    sha256: 495b4460d4308d1ef1d2dc3bb778fba9e0f0350b77d31a0f5fde19f13fcc769d
+processing_config: configs/data/bgl.yaml
+notes: >-
+  Raw archive and log are immutable and excluded from Git. The processed event
+  table was generated chronologically with Drain3 0.9.11 on 2026-09-24.

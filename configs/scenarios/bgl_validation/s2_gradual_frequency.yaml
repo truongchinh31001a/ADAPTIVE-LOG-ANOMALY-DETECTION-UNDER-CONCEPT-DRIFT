@@ -1,0 +1,18 @@
+scenario_id: BGL_VAL_S2
+drift_type: frequency
+temporal_pattern: gradual
+start_window: 110
+end_window: 120
+drift_magnitude: 0.25
+affected_templates: [D00000011, D00000006, D00000003, D00000004, D00000007]
+window_size: 10000
+random_seed: 101
+tolerance_horizon: 5
+base_mode: stationary_replay
+evaluation_start_window: 95
+evaluation_end_window: 159
+reference_window_count: 1
+reference_min_templates: 3
+reference_min_dominant_templates: 2
+reference_min_template_fraction: 0.10
+background_anomaly_rate: 0.005

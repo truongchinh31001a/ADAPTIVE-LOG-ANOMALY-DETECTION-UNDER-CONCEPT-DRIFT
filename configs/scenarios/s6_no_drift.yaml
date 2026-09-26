@@ -1,0 +1,11 @@
+scenario_id: S6
+drift_type: none
+temporal_pattern: none
+start_window: null
+end_window: null
+drift_magnitude: 0.0
+affected_templates: []
+window_size: 200
+random_seed: 17
+tolerance_horizon: 3
+

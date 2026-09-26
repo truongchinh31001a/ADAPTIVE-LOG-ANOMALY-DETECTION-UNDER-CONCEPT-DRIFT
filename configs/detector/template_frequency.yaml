@@ -1,0 +1,7 @@
+name: template_frequency
+kind: template_frequency
+alpha: 1.0
+threshold_quantile: 0.95
+minimum_probability: 1.0e-9
+recalibrate_threshold_on_update: true
+threshold_update_rate: 1.0

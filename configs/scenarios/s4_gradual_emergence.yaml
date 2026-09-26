@@ -1,0 +1,11 @@
+scenario_id: S4
+drift_type: emergence
+temporal_pattern: gradual
+start_window: 8
+end_window: 12
+drift_magnitude: 0.25
+affected_templates: [E1, E2]
+window_size: 200
+random_seed: 17
+tolerance_horizon: 3
+

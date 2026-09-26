@@ -1,0 +1,18 @@
+selection_rule:
+  minimum_events: 500
+  minimum_active_windows: 2
+  anomaly_events: 0
+  ordering: first_timestamp_then_template_id
+  take_first: 5
+validation_templates:
+  - D00000326
+  - D00000355
+  - D00000363
+  - D00000366
+  - D00000372
+test_templates:
+  - D00000387
+  - D00000447
+  - D00000511
+  - D00000520
+  - D00000525

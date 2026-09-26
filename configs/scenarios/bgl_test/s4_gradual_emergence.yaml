@@ -1,0 +1,18 @@
+scenario_id: BGL_TEST_S4
+drift_type: emergence
+temporal_pattern: gradual
+start_window: 195
+end_window: 205
+drift_magnitude: 0.25
+affected_templates: [D00000387, D00000447, D00000511, D00000520, D00000525]
+window_size: 10000
+random_seed: 101
+tolerance_horizon: 5
+base_mode: stationary_replay
+evaluation_start_window: 190
+evaluation_end_window: 259
+reference_window_count: 1
+reference_min_templates: 3
+reference_min_dominant_templates: 2
+reference_min_template_fraction: 0.10
+background_anomaly_rate: 0.005

@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local settings and secrets
+.env
+
+# Research data and generated artifacts
+data/bronze/**
+data/silver/**
+data/gold/**
+data/drift_scenarios/**
+data/results/**
+artifacts/**
+reports/figures/**
+reports/tables/**
+notebooks/.ipynb_checkpoints/
+
+# Keep directory documentation/placeholders tracked
+!data/**/README.md
+!data/**/.gitkeep
+!artifacts/README.md
+!reports/figures/.gitkeep
+!reports/tables/.gitkeep
+

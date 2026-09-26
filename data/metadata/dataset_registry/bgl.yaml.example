@@ -1,0 +1,17 @@
+dataset_id: bgl
+canonical_name: Blue Gene/L Log Dataset
+source_url: https://github.com/logpai/loghub/tree/master/BGL
+citation: >-
+  Adam J. Oliner and Jon Stearley. What Supercomputers Say: A Study of Five
+  System Logs. DSN 2007; Jieming Zhu et al. Loghub: A Large Collection of
+  System Log Datasets for AI-driven Log Analytics. ISSRE 2023.
+acquired_at: YYYY-MM-DD
+license_or_terms: >-
+  Freely available for research or academic work. Retain the Loghub license
+  notice, reference the Loghub repository URL, and cite the Loghub paper.
+raw_files:
+  - path: data/bronze/bgl/BGL.log
+    size_bytes: TODO
+    sha256: TODO
+processing_config: configs/data/bgl.yaml
+notes: Keep the raw file immutable and outside Git.

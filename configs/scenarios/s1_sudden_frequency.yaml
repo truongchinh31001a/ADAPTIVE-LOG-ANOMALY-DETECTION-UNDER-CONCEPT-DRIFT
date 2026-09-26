@@ -1,0 +1,11 @@
+scenario_id: S1
+drift_type: frequency
+temporal_pattern: sudden
+start_window: 10
+end_window: 10
+drift_magnitude: 0.40
+affected_templates: []
+window_size: 200
+random_seed: 17
+tolerance_horizon: 3
+

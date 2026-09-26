@@ -1,0 +1,13 @@
+experiment_id: demo_v1
+warmup_windows: 5
+tolerance_horizon: 3
+methods: [static, periodic, naive, proposed]
+seeds: [17]
+scenarios:
+  - configs/scenarios/s1_sudden_frequency.yaml
+  - configs/scenarios/s2_gradual_frequency.yaml
+  - configs/scenarios/s3_sudden_emergence.yaml
+  - configs/scenarios/s4_gradual_emergence.yaml
+  - configs/scenarios/s5_transient_anomaly.yaml
+  - configs/scenarios/s6_no_drift.yaml
+

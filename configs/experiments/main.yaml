@@ -1,0 +1,16 @@
+experiment_id: bgl_main_v1
+detector_config: configs/detector/deep_log.yaml
+validation_scenarios: configs/scenarios/bgl_validation
+test_scenarios: configs/scenarios/bgl_test
+validation_split: validation
+test_split: test
+validation_warmup_windows: 95
+test_warmup_windows: 190
+tolerance_horizon: 5
+methods: [static, periodic, naive, proposed]
+validation_seeds: [101, 202, 303]
+test_seeds: [1101, 1202, 1303, 1404, 1505]
+drift_magnitudes: [0.25]
+sensitivity_seeds: [1101]
+sensitivity_magnitudes: [0.10, 0.40]
+# Test configs and seeds must be copied to a versioned frozen snapshot before final runs.

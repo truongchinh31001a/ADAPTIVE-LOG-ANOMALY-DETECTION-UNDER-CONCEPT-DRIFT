@@ -1,0 +1,34 @@
+experiment_id: bgl_frozen_test_v1
+frozen_at_utc: "2026-09-24T00:00:00Z"
+detector_config: configs/detector/deep_log.yaml
+characterization_config: configs/characterization/default.yaml
+policy_config: configs/policy/default.yaml
+validation_scenarios: configs/scenarios/bgl_validation
+test_scenarios: configs/scenarios/bgl_test
+validation_split: validation
+test_split: test
+validation_warmup_windows: 95
+test_warmup_windows: 190
+tolerance_horizon: 5
+methods: [static, periodic, naive, proposed]
+validation_seeds: [101, 202, 303]
+test_seeds: [1101, 1202, 1303, 1404, 1505]
+drift_magnitudes: [0.25]
+sensitivity_seeds: [1101]
+sensitivity_magnitudes: [0.10, 0.40]
+frozen_decisions:
+  event_window_size: 10000
+  validation_evaluation_windows: [95, 159]
+  test_evaluation_windows: [190, 259]
+  stationary_reference_rule: >-
+    Latest anomaly-free pre-evaluation window with at least three templates and
+    at least two templates having within-window frequency >= 0.10.
+  validation_reference_window: 92
+  test_reference_window: 187
+  background_anomaly_rate: 0.005
+  adaptation_buffer_windows: 3
+  recurrence_minimum_windows: 3
+  recurrence_minimum_events: 200
+  minimum_persistence: 6
+  policy_rearm_stable_windows: 3
+  no_test_tuning: true

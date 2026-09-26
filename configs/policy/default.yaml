@@ -1,0 +1,12 @@
+divergence_threshold: 0.05
+new_template_rate_threshold: 0.03
+magnitude_threshold: 0.03
+minimum_persistence: 6
+maximum_anomaly_evidence: 0.10
+cooldown_windows: 10
+rearm_stable_windows: 3
+periodic_interval: 5
+adaptation_buffer_windows: 3
+adaptation_maximum_normalized_score: 0.80
+adaptation_minimum_recurrent_template_windows: 3
+adaptation_minimum_recurrent_template_events: 200

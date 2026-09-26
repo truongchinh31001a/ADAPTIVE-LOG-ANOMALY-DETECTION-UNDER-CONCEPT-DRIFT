@@ -1,0 +1,11 @@
+scenario_id: S5
+drift_type: transient_anomaly
+temporal_pattern: sudden
+start_window: 10
+end_window: 11
+drift_magnitude: 0.35
+affected_templates: [A1]
+window_size: 200
+random_seed: 17
+tolerance_horizon: 3
+

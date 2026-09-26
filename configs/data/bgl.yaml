@@ -1,0 +1,40 @@
+dataset: bgl
+timezone: UTC
+normal_labels: ["-", "0", "normal", "Normal"]
+window:
+  mode: count
+  size: 10000
+  decision_status: frozen
+  rationale: >-
+    Selected on the train-plus-validation development chronology. It retains a
+    median of 5 templates per complete window while halving the number of windows
+    relative to 5000 events; 20000 events reduces temporal resolution further.
+split:
+  train_fraction: 0.20
+  validation_fraction: 0.20
+  test_fraction: 0.60
+  decision_status: frozen
+  unit: complete_count_windows
+  train_window_ids: [0, 94]
+  validation_window_ids: [95, 189]
+  test_window_ids: [190, 474]
+  test_last_window_is_partial: true
+  boundaries_utc:
+    train_start: "2005-06-03T22:42:50Z"
+    validation_start: "2005-06-25T10:34:23Z"
+    test_start: "2005-07-10T04:09:51Z"
+    test_end: "2006-01-04T16:00:05Z"
+training_protocol:
+  supervision: semi_supervised
+  offline_normal_filter_uses_training_labels: true
+  evaluation_labels_visible_to_detector_or_policy: false
+  heldout_templates: configs/data/bgl_heldout_templates.yaml
+parser:
+  implementation: drain3
+  package_version: "0.9.11"
+  similarity_threshold: 0.40
+  depth: 4
+  max_children: 100
+  parametrize_numeric_tokens: true
+  lowercase: false
+  replacement_token: "<*>"
